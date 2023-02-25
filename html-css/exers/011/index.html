@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Midias html5</title>
+</head>
+<body>
+    <h1>Midias</h1>
+    <h2>imagens dinamicas</h2>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente diminuia ou aumente o navegador</p>
+
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/ImageP.png" type="image/png">
+        <source media="(max-width:1000px)" srcset="imagens/ImageM.png" type="image/png">
+        <img src="imagens/ImageG.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos reproduzir audio em html5</p>
+    <!--<audio src="musicas/Ice & Fire - King Canyon.mp3" controls autoplay></audio>-->
+    <!--peguei essa audio na bliblioteca do youtube gratis-->
+
+    <audio preload "metadata" controls>
+        <source src="musicas/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+    
+
+</audio>
+    <h1>Agora colocando o video aqui: </h1>
+    <p>esta hospeado no meu próprio servidor</p>
+    <!--usei um softwerer para converter : HANDBREAK : é grátis-->
+
+    <!--<video src="videos/menor 2.mkv" width="500" controls></video>-->
+    <!--Essa em cima é direta, e restrita-->
+
+
+    <video width="500" controls loop >
+        <source src="videos/menor 2.mkv" type="video/mkv">
+        <source src="videos/menor 3.webm" type="video/webm">
+        <source src="videos/Pexels Videos 2252797.mp4" type="mp4">
+            <p>Se não carrego um video seu navegador não é compatível, pedimos desculpas.</p>
+
+
+    </video>
+    <!--essa é aberta e mais abragente e melhor para evitar erros-->
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpPI_oKC_l4" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+</body>
+</html>
